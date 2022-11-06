@@ -1,0 +1,106 @@
+#Emplacement_Principal {
+    /* Centrer le contenu */
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    /* Prends tout l'écran */
+    height: 100vh;
+    width: 100%;
+
+    /* Fond d'écran*/
+    /* background: linear-gradient(135deg, #1D4CAA, #1B20ab); */
+    background-image: url(../../assets/Background.PNG);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover
+}
+
+@keyframes Logo {
+    0% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0);
+    }
+
+    10% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+
+    15% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+
+    40% {
+        -webkit-transform: translateX(-330px);
+        transform: translateX(-330px);
+    }
+
+    70% {
+        -webkit-transform: translateX(-330px);
+        transform: translateX(-330px);
+    }
+
+    90% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
+@keyframes Marque {
+    0% {
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 0;
+    }
+
+    60% {
+        opacity: 1;
+    }
+
+    70% {
+        opacity: 1;
+    }
+
+    80% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+#Emplacement_Logo {
+    /* Centrer le contenu */
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#IMG_Logo {
+    margin: 20px;
+    height: 150px;
+    animation: Logo 10s ease-in-out infinite both;
+}
+
+#IMG_Marque {
+    margin: 20px;
+    margin-top: -180px;
+    height: 150px;
+    animation: Marque 10s ease-in-out infinite both;
+}
+
+#Text_Slogan {
+    font-size: 30px;
+    color: white;
+}
