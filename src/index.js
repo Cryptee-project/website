@@ -11,8 +11,8 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 
 // #region Render
 root.render(
-    <React.StrictMode>
-        <Home></Home>
-    </React.StrictMode>
+  <React.StrictMode>
+    <Home></Home>
+  </React.StrictMode>
 );
 // #endregion

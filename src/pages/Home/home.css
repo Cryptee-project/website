@@ -13,7 +13,6 @@
     /* background: linear-gradient(135deg, #1D4CAA, #1B20ab); */
     background-image: url(../../assets/Background.PNG);
     background-position: center center;
-    background-repeat: no-repeat;
     background-size: cover
 }
 
@@ -35,12 +34,12 @@
 
     40% {
         -webkit-transform: translateX(-330px);
-        transform: translateX(-330px);
+        transform: translateX(-180%);
     }
 
     70% {
         -webkit-transform: translateX(-330px);
-        transform: translateX(-330px);
+        transform: translateX(-180%);
     }
 
     90% {
@@ -82,25 +81,30 @@
 
 #Emplacement_Logo {
     /* Centrer le contenu */
+
     align-items: center;
     display: flex;
     flex-direction: column;
 }
 
 #IMG_Logo {
+    padding: 1.5%;
     margin: 20px;
-    height: 150px;
+    min-width: 60px;
+    width: 8%;
     animation: Logo 10s ease-in-out infinite both;
 }
 
 #IMG_Marque {
     margin: 20px;
-    margin-top: -180px;
-    height: 150px;
+    width: 30%;
+    min-width: 200px;
+    position: absolute;
     animation: Marque 10s ease-in-out infinite both;
 }
 
 #Text_Slogan {
+    text-align: center;
     font-size: 30px;
     color: white;
 }
